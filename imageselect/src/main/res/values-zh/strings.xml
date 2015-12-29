@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="album">图库</string>
+    <string name="camera">相机</string>
+    <string name="please_wait_a_moment">请稍候.</string>
+</resources>

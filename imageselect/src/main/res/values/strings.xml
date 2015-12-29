@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name" translatable="false">ImageSelect</string>
+
+    <string name="camera">CAMERA</string>
+    <string name="album">ALBUM</string>
+    <string name="please_wait_a_moment">Wait a moment.</string>
+</resources>
