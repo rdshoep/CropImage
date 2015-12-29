@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    public void onImageSelected(Uri targetUri) {
+    public void onImageSelected(int requestCode, Uri targetUri) {
         Toast.makeText(this, targetUri.getPath(), Toast.LENGTH_SHORT).show();
         imageView.setImageURI(targetUri);
     }
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    public void onCropEnd(Uri targetUri) {
+    public void onCropEnd(int requestCode, Uri targetUri) {
         Toast.makeText(this, targetUri.getPath(), Toast.LENGTH_SHORT).show();
         imageView.setImageURI(targetUri);
     }

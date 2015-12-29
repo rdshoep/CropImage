@@ -100,7 +100,7 @@ public class ImageCropper implements ImageSelectCallback, CropImageCallback {
     }
 
     @Override
-    public void onImageSelected(Uri targetUri) {
+    public void onImageSelected(int requestCode, Uri targetUri) {
         _impl.cropImage(this.requestCode, targetUri, this.maxSize, this);
     }
 
@@ -133,9 +133,9 @@ public class ImageCropper implements ImageSelectCallback, CropImageCallback {
     }
 
     @Override
-    public void onCropEnd(Uri targetUri) {
+    public void onCropEnd(int requestCode, Uri targetUri) {
         if (cropImageCallback != null) {
-            cropImageCallback.onCropEnd(targetUri);
+            cropImageCallback.onCropEnd(requestCode, targetUri);
             progressView.hideProgress();
         }
     }

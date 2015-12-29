@@ -100,7 +100,7 @@ class ImageSelectIceCreamImpl implements ImageSelectImpl {
                     @Override
                     public void onFinish(Uri data) {
                         if (selectCallback != null && data != null) {
-                            selectCallback.onImageSelected(data);
+                            selectCallback.onImageSelected(ImageSelectIceCreamImpl.this.curRequestCode, data);
                         }
                     }
 

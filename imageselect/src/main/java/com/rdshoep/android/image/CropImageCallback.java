@@ -24,7 +24,8 @@ public interface CropImageCallback {
     /**
      * 图片裁剪完成回调
      *
-     * @param targetUri 最终图片路径
+     * @param requestCode 进入裁剪界面时的requestCode
+     * @param targetUri   最终图片路径
      */
-    void onCropEnd(Uri targetUri);
+    void onCropEnd(int requestCode, Uri targetUri);
 }

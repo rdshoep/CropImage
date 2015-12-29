@@ -93,9 +93,9 @@ public class ImageSelector implements ImageSelectCallback {
     }
 
     @Override
-    public void onImageSelected(Uri targetUri) {
+    public void onImageSelected(int requestCode, Uri targetUri) {
         if (imageSelectCallback != null) {
-            imageSelectCallback.onImageSelected(targetUri);
+            imageSelectCallback.onImageSelected(requestCode, targetUri);
             progressView.hideProgress();
         }
     }

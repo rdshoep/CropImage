@@ -78,7 +78,7 @@ class ImageCropAllImpl implements ImageCropImpl {
                     @Override
                     public void onFinish(Uri data) {
                         if (cropImageCallback != null && data != null) {
-                            cropImageCallback.onCropEnd(data);
+                            cropImageCallback.onCropEnd(ImageCropAllImpl.this.requestCode, data);
                         }
                     }
 

@@ -14,7 +14,9 @@ public interface ImageSelectCallback {
 
     /**
      * 图片选择完成回调
-     * @param targetUri 处理后的文件Uri
+     *
+     * @param requestCode requestCode
+     * @param targetUri   处理后的文件Uri
      */
-    void onImageSelected(Uri targetUri);
+    void onImageSelected(int requestCode, Uri targetUri);
 }

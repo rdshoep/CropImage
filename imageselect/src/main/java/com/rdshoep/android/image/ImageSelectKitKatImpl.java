@@ -98,7 +98,7 @@ class ImageSelectKitKatImpl implements ImageSelectImpl {
                     @Override
                     public void onFinish(Uri data) {
                         if (selectCallback != null && data != null) {
-                            selectCallback.onImageSelected(data);
+                            selectCallback.onImageSelected(ImageSelectKitKatImpl.this.curRequestCode, data);
                         }
                     }
 
