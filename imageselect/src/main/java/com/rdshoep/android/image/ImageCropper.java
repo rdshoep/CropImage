@@ -129,6 +129,9 @@ public class ImageCropper implements ImageSelectCallback, CropImageCallback {
 
     @Override
     public Bundle setCropParams(int requestCode) {
+        if(cropImageCallback != null){
+            return cropImageCallback.setCropParams(requestCode);
+        }
         return null;
     }
 
